@@ -2,9 +2,9 @@
 
 ```
 MongoDatabase db=DatabaseConnection.getMongoConnection();
-MongoCollection<Document> blocked_users = db.getCollection("<>");
+MongoCollection<Document> b = db.getCollection("<>");
 Document filter=new Document();
-Iterator<Document> it = blocked_users.find().iterator();
+Iterator<Document> it = b.find().iterator();
 while(it.hasNext()) {
 	Document d=it.next();
 	System.out.println(d);
