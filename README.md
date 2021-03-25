@@ -15,3 +15,11 @@ while(it.hasNext()) {
 	System.out.println(d);
 }
 ```
+
+## Config
+
+```
+DbConnection.java
+String str="mongodb://saiashish:saiashish@localhost:27017/mydb?retryWrites=true";
+builder.hosts(Arrays.asList(new ServerAddress("127.0.0.1", 27017))))
+```
